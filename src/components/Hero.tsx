@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Download } from 'lucide-react'
 
 export function Hero() {
   return (
@@ -23,7 +23,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
             <span className="text-xs font-medium text-white/80 uppercase tracking-wider">
-              Открыты для новых проектов
+              YouTube · VK · Rutube · Dzen
             </span>
           </div>
         </motion.div>
@@ -34,9 +34,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-8 text-gradient"
         >
-          Цифровая
+          Аудио из
           <br />
-          Алхимия
+          любого видео
         </motion.h1>
 
         <motion.p
@@ -45,25 +45,32 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Мы превращаем сложные идеи в интуитивные цифровые продукты.
-          Объединяем искусство, технологии и стратегию для создания будущего.
+          Вставьте ссылку на видео — и получите аудиодорожку в MP3 за секунды.
+          Без регистрации, без водяных знаков, в максимальном качестве.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="max-w-2xl mx-auto"
         >
-          <button className="group relative px-8 py-4 bg-white text-black rounded-full font-semibold text-lg overflow-hidden transition-all hover:scale-105">
-            <span className="relative z-10 flex items-center gap-2">
-              Наши работы <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
-          </button>
-          <button className="px-8 py-4 glass rounded-full font-semibold text-lg text-white hover:bg-white/10 transition-all hover:scale-105">
-            Связаться с нами
-          </button>
+          <div className="flex flex-col sm:flex-row items-center gap-3 p-2 glass rounded-2xl sm:rounded-full">
+            <input
+              type="url"
+              placeholder="Вставьте ссылку на видео..."
+              className="w-full flex-1 bg-transparent px-6 py-3 text-white placeholder:text-white/40 focus:outline-none"
+            />
+            <button className="group relative w-full sm:w-auto px-8 py-4 bg-white text-black rounded-xl sm:rounded-full font-semibold text-lg overflow-hidden transition-all hover:scale-105">
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                <Download className="w-4 h-4" /> Скачать MP3
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
+            </button>
+          </div>
+          <p className="mt-5 text-sm text-white/40 flex items-center justify-center gap-2">
+            Поддержка форматов MP3 и M4A <ArrowRight className="w-3 h-3" /> бесплатно и без лимитов
+          </p>
         </motion.div>
       </div>
 

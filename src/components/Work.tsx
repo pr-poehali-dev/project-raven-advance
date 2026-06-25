@@ -3,28 +3,28 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "НеоБанк",
-    category: "Финтех приложение",
-    image: "https://cdn.poehali.dev/templates/liquid-glass-agency/neon-finance-app-interface-dark-mode.jpg",
+    title: "YouTube",
+    category: "Видеохостинг №1",
+    image: "https://cdn.poehali.dev/projects/3fed17b5-db53-492f-ab3b-6ca51121019f/files/23ec566d-ca94-4b36-aa9e-ec3a119872d0.jpg",
+    color: "from-red-500/20 to-orange-500/20",
+    description: "Скачивайте звук из любого ролика, клипа или подкаста на YouTube — от музыки до лекций и интервью.",
+    tags: ["MP3", "M4A", "320 kbps"],
+  },
+  {
+    title: "VK Видео",
+    category: "Музыка и видео ВКонтакте",
+    image: "https://cdn.poehali.dev/projects/3fed17b5-db53-492f-ab3b-6ca51121019f/files/3382c92e-12bd-498b-8ad6-77603bf8f50e.jpg",
     color: "from-blue-500/20 to-cyan-500/20",
-    description: "Переосмысление пользовательского опыта через интуитивный дизайн и плавные взаимодействия.",
-    tags: ["UX/UI", "Разработка"],
+    description: "Извлекайте аудиодорожку из видео и клипов ВКонтакте за пару секунд и слушайте офлайн где угодно.",
+    tags: ["MP3", "Без рекламы"],
   },
   {
-    title: "Гармония",
-    category: "Велнес платформа",
-    image: "https://cdn.poehali.dev/templates/liquid-glass-agency/meditation-app-interface-soft-gradients.jpg",
+    title: "Rutube · Дзен",
+    category: "Российские платформы",
+    image: "https://cdn.poehali.dev/projects/3fed17b5-db53-492f-ab3b-6ca51121019f/files/cd5e33d2-358e-4dbf-a4c2-40b1d8fab095.jpg",
     color: "from-purple-500/20 to-pink-500/20",
-    description: "Приложение для медитации с мягкими градиентами и умиротворяющим интерфейсом.",
-    tags: ["Брендинг", "UX/UI"],
-  },
-  {
-    title: "Орбита",
-    category: "Аэрокосмический сайт",
-    image: "https://cdn.poehali.dev/templates/liquid-glass-agency/space-website-interface-futuristic.jpg",
-    color: "from-orange-500/20 to-red-500/20",
-    description: "Футуристичный веб-сайт для космической компании с эффектом погружения.",
-    tags: ["Веб-дизайн", "Разработка"],
+    description: "Поддержка Rutube, Дзена и других популярных сервисов — сохраняйте любимый контент в аудиоформате.",
+    tags: ["MP3", "Высокое качество"],
   },
 ]
 
@@ -43,7 +43,7 @@ export function Work() {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl font-bold mb-6"
             >
-              Избранные работы
+              Поддерживаемые платформы
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export function Work() {
               transition={{ delay: 0.1 }}
               className="text-xl text-white/60 max-w-md"
             >
-              Подборка наших последних цифровых трансформаций.
+              Скачивайте аудио с самых популярных видеосервисов в один клик.
             </motion.p>
           </div>
           <motion.button
@@ -61,7 +61,7 @@ export function Work() {
             viewport={{ once: true }}
             className="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10 transition-colors text-sm font-medium"
           >
-            Все проекты
+            Все платформы
           </motion.button>
         </div>
 
